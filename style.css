@@ -1,0 +1,241 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+  overflow: hidden;
+  font-family: 'DM Sans', sans-serif;
+
+
+}
+canvas{
+  height: 100vh !important;
+  width: 100vw !important;
+}
+.sliderContainer{
+ height: 100%;
+  position:fixed;
+  left:2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:2rem;
+  padding: 5rem;
+ 
+
+}
+#slider1 {
+  /* position: absolute;
+  top: 7%; */
+  /* left: 5%; */
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+ 
+}
+h1{
+  color:black;
+  font-size: larger;
+}
+#slider1 .rs-container {
+  border-color: none;
+  cursor: pointer;
+  
+}
+
+#slider1 .rs-range-color  {
+background: linear-gradient(90deg,#9DE5EC 0%, #9DE5EC  100%);}
+#slider1 .rs-path-color  {
+  background:white ;
+}
+#slider1 .rs-handle  {
+  background: radial-gradient(ellipse at center,white 0%, white 34%, white 100%);
+  cursor: pointer;
+}
+#slider1 .rs-tooltip-text {
+  color: #9DE5EC;
+}
+#slider1 .rs-bg-color {
+  background-color: black;
+}
+.rs-border {
+  border: none;
+}
+
+#slider2 {
+   
+  transform: translate(-50%, -50%);
+}
+
+#slider2 .rs-range-color  {
+  background: linear-gradient(90deg,#9DE5EC 0%,#9DE5EC  100%);}
+#slider2 .rs-path-color  {
+  background: white;}
+#slider2 .rs-handle  {
+  background: radial-gradient(ellipse at center,white 0%, white 34%, white 100%);
+}
+.rs-tooltip-text {
+  
+  font-size: 25px;
+ 
+}
+
+#slider2 .rs-tooltip-text {
+  color: #9DE5EC;
+font-weight: 700;
+font-size: 200px;
+}
+
+
+#slider3 {
+  /* position: absolute;
+  top: 7%; */
+  /* left: 25%; */
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#slider3 .rs-range-color  {
+  background: linear-gradient(90deg,#9DE5EC 0%, #9DE5EC  100%);}
+
+#slider3 .rs-path-color  {
+  background: white;
+}
+#slider3 .rs-handle  {
+  background: radial-gradient(ellipse at center,white 0%, white 34%, white 100%);
+  cursor: pointer;
+}
+#slider3.rs-border  {
+
+  border-color: white;
+}
+
+#slider3 .rs-tooltip-text {
+  color: #9DE5EC;
+}
+#slider3 .rs-bg-color {
+  background-color: black;
+}
+.sliderContainer{
+  /* position: absolute;
+  top: 7%;
+  display: flex; */
+
+
+ 
+}
+
+.i-button{
+  padding: 2rem;
+  position:absolute;
+  right: 0%;
+  color: white;
+}
+
+button{
+  background: linear-gradient(90deg, rgb(14, 13, 13) 0%, rgb(14, 14, 13) 100%);
+  border-radius: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  box-shadow: 0  0 1px 1px black;
+ font-weight: bold;
+}
+
+#content{
+  width: 100vw;
+  height: 100vh;
+  position:absolute;
+  color: white;
+  display: flex ;
+  
+  align-items: center;
+  justify-content: center;
+   
+  display: none;
+
+
+}
+
+
+
+#innerContent{
+
+  width:100%;
+  height: 100%;
+ /* background-color: #f00; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.displayN{
+  top:100px;
+  width: 500px;
+  height: 500px;
+  background-color:black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap:1rem;
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  border: 1px solid white;
+}
+
+.picker{
+  position: absolute;
+  top: 50%;
+  left: 71%;
+  transform: translateY(-50%);
+  transform: rotate(-90deg);
+  text-align: center;
+  
+}
+.colorPicker {
+  /* position: absolute;
+  top: 40%;
+  left: 80%;
+  transform: translateY(-50%);
+  transform: rotate(-90deg);
+  text-align: center;
+  background-color: yellow; */
+  width:550px;
+}
+
+#colorPicker {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to right, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);
+  outline: none;
+  border-radius: 2rem;
+  -webkit-appearance: none;
+
+}
+
+#colorPicker::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  border: 1px solid white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+
+}
+
+.img{
+  width: 100%;
+  display: flex;
+   justify-content: center;
+}
+
+#img{
+  width: 100%;
+}
